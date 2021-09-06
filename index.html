@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal Box</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Click on the Button to see Modal</h1>
+    <button class="button" id="click1">Click me</button>
+    <div class="modal" id="modal1">
+        <button id="cross">X</button>
+        <div class="modal-content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic, magni, eaque nulla unde facilis aliquam fuga ea ducimus numquam enim quam rerum nisi sequi natus. In, aut? Minus iste beatae suscipit. Voluptates a quod obcaecati! Blanditiis voluptatum error dolores, at veritatis atque, libero nemo, nisi tempore reiciendis sunt modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae, magnam voluptas accusantium eveniet eligendi tenetur necessitatibus, porro nihil repellendus omnis dolore aliquam rem consequuntur, dolores quis qui molestiae accusamus consectetur sunt nostrum officia reprehenderit. Earum aspernatur eum eveniet at.</p></div>
+    </div>
+</body>
+<script>
+ var btnclick = document.getElementById('click1');
+ var display1 = document.getElementById('modal1');
+ var close = document.getElementById('cross');
+ btnclick.addEventListener('click' , ()=>{
+    display1.style.display = "block";
+    display1.classList.add("animatemodal1");
+ });
+ close.addEventListener('click' , ()=>{
+    display1.style.display = "none";
+ });
+</script>
+</html>
